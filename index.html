@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажерный зал "Гараж"</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- модальное окно -->
+
+    <div class="modal hide">
+        <div class="modal__form">
+            <div class="cross modal__cross">&times;</div>
+            <div class="form__login">
+                <label for="name">Имя</label>
+                <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Введите имя..."
+                        class="input"
+                />
+            </div>
+            <div class="form__login">
+                <label for="phone">Имя</label>
+                <input
+                        type="phone"
+                        name="phone"
+                        id="phone"
+                        placeholder="Введите телефон..."
+                        class="input"
+                />
+            </div>
+            <button class="button goldenrod">Хочу на тренеровку</button>
+        </div>
+    </div>
+
+
+    <!-- начало страницы регистрации  -->
+
+    <div class="login__page">
+        <div class="form">
+            <h1 class="form__title">Форма регистрации</h1>
+            <div class="form__login">
+                <label for="login">Логин</label>
+                <input
+                    type="text"
+                    name="login"
+                    id="login"
+                    placeholder="Введите логин..."
+                    class="login input"
+                />
+              </div>
+
+              <div class="form__password">
+                <label for="password">Пароль</label>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Введите пароль..."
+                    class="password input"
+                />
+              </div>
+
+              <button class="button form__submit">Войти на сайт</button>
+
+        </div>
+    </div>
+
+    <!-- конец страницы регистрации  -->
+
+    <!-- начало  основной страницы-->
+
+    <div class="main__page hide">
+
+
+        <!-- хэдер начало  -->
+
+        <div class="header">
+            <div class="sidebar header__sidebar">
+                <div class="site__name">
+                    Тренажерный зал "ГАРАЖ"
+                </div>
+                <div class="menu">
+                    <ul class="menu__ul">
+                        <li><a href="#trainers">Тренерский состав</a></li>
+                        <li><a href="#service">Услуги</a></li>
+                        <li><a href="#gallery">Фотогалерея</a></li>
+                    </ul>
+                </div>
+                <div class="phone">
+                    Телефон +79039526659
+                </div>
+            </div>
+            <div class="slogan">
+                <p>Достигни своего лимита</p>
+                <p>и перейди на другой</p>
+                <p> уровень</p>
+                <button class="slogan__button">Записаться на тренировку</button>
+            </div>
+        </div>
+
+        <!-- хэдер конец  -->
+
+        <!-- основная часть -->
+
+        <div class="main">
+
+
+            <!-- раздел наши тренера  -->
+
+            <div class="our-trainers" id ="trainers">
+                <div class="our-trainers__title">Наши тренера</div>
+                <div class="our-trainers__photos">
+                    <div class="denis">
+                        <img src="./assets/images/trainers/dan.jpg"/>
+                        <div class="our-trainers__text_dan">
+                            <h2>Кочмарёв Денис</h2>
+
+                            <h3>О тренере:</h3>
+                            <ul class="our-trainers__text_ul">
+                                <li>Высшее спортивное образование (магистратура ТГУ) </li>
+                                <li>Выступающий спортсмен с 1998г</li>
+                                <li>МС России пауэрлифтинг</li>
+                                <li>МС НАП пауэрлифтинг</li>
+                                <li>МС русский жим</li>
+                                <li>Тренерский стаж 13 лет</li>
+                                <li>Первые и призовые места на турнирах по силовым видам спорта , по силовому экстриму. Чемпион кубка мира по пауэрлифтингу. </li>
+                                <li>Тренер выступающих спортсменов по пауэрлифтингу, силовому экстриму, бодибилдингу</li>
+                            </ul>
+                            <h3>Направления:</h3>
+                            <ul class="our-trainers__text_ul">
+                                <li>Подготовка к соревнованиям по пауэрлифтингу, силовому экстриму, бодибилдинг. </li>
+                                <li>Увеличение силовых результатов. </li>
+                                <li>Набор мышечной массы, коррекция фигуры. Избавление от лишнего веса.</li>
+                                <li>Исправление дисбаланса мышечного развития. </li>
+                                <li>Офп. </li>
+                                <li>Работа с подростками для сбалансированного развития.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="kolya">
+                        <img src="./assets/images/trainers/kolya.jpg"/>
+                        <div class="our-trainers__text_kolya">
+                            <div class="our-trainers__text_dan">
+                                <h2>Черепанов Николай</h2>
+
+                                <h3>О тренере:</h3>
+                                <ul class="our-trainers__text_ul">
+                                    <li>PRO атлет WRPF</li>
+                                    <li>МСМК по становой тяге </li>
+                                    <li>МС по пауэрлифтингу </li>
+                                    <li>2х Чемпион Мира по становой тяге</li>
+                                    <li>Вице Чемпион Мира PRO дивизиона WRPF по становой тяге</li>
+                                    <li>Чемпион Евразии по становой тяге</li>
+                                    <li>Многократный чемпион и призёр турниров российского, зонального, областного и регионального уровня </li>
+                                    <li>Рекордсмен Мира, Европы, Азии и России по становой тяге</li>
+                                    <li> Представитель Федерации WRPF в Томской области</li>
+                                    <li> Высшее физкультурно-спортивное образование</li>
+                                    <li>Стаж работы тренером более 6 лет</li>
+                                    <Li>Стаж тренировок более 9 лет </Li>
+
+
+
+                                </ul>
+                                <h3>Направления:</h3>
+                                <ul class="our-trainers__text_ul">
+                                    <li>Пауэрлифтинг и отдельные движения </li>
+                                    <li>ОФП </li>
+                                    <li>Набор веса</li>
+                                    <li> Похудение </li>
+                                    <li>Офп </li>
+                                    <li>Постановка правильной техники выполнения упражнений</li>
+                                    <li>ЛФК</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- конец раздела наши тренера -->
+
+            <!-- начало раздела услуги -->
+
+            <div class="service" id="service">
+
+                <ul class="service__ul"> Наши услуги:
+                    <li>Похудение</li>
+                    <li>Набор массы</li>
+                    <li>Лечебная фикзультура</li>
+                    <li>Индивидуальная программа тренировок</li>
+                    <li>Общефизическая подготовка</li>
+                    <li>Работа с подростками для сбалансированного развития</li>
+                    <li>Пауэрлифтинг</li>
+                    <li>Исправление дисбаланса мышечного развития</li>
+                </ul>
+
+            </div>
+
+            <!-- конец раздела услуги -->
+
+            <!-- начало раздела фотогалерея -->
+
+            <div class="gallery" id="gallery">
+                <img src="assets/images/photos/1.jpg" alt="photo" />
+                <img src="assets/images/photos/3.jpg" alt="photo" />
+                <img src="assets/images/photos/4.jpg" alt="photo" />
+                <img src="assets/images/photos/5.jpg" alt="photo" />
+            </div>
+
+            <!-- конец раздела фотогалерея -->
+
+    </div>
+
+    <div class="footer">
+        <div class="sidebar">
+            <div class="site__name">
+                Тренажерный зал "ГАРАЖ"
+            </div>
+            <div class="menu">
+                <ul class="menu__ul">
+                    <li><a href="#trainers">Тренерский состав</a></li>
+                    <li><a href="#trainers">Услуги</a></li>
+                    <li><a href="#gallery">Фотогалерея</a></li>
+                </ul>
+            </div>
+            <div class="phone">
+                Телефон +79039526659
+            </div>
+        </div>
+    </div>
+
+
+    <!-- конец основной страницы  -->
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
